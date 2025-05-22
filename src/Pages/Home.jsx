@@ -6,7 +6,7 @@ import TextField from "@mui/material/TextField"; // Material UI TextField compon
 import { Button, MenuItem } from "@mui/material"; // Button and MenuItem from Material UI
 import Categories from "../Data/Categories"; // Importing quiz categories
 import { useNavigate } from "react-router-dom"; // Hook for navigation
-import ErrorMessage from "../Components/Errormessage"; // Custom error message component
+import ErrorMessage from "../Components/ErrorMessage.jsx"; // Custom error message component
 
 // Home component receives props: name, setName, and fetchQuestions
 function Home({ name, setName, fetchQuestions }) {
@@ -111,4 +111,3 @@ function Home({ name, setName, fetchQuestions }) {
 
 // Exporting Home component for use in other parts of the app
 export default Home;
-    
