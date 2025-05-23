@@ -5,6 +5,13 @@
   align-items: center;
 }
 
+.mainDiv{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
 .singleQuestion {
   width: 95%;
   min-height: 350px;
@@ -38,6 +45,15 @@
 @media (max-width: 614px) {
   .singleOption {
     width: 100%;
+  }
+
+  .singleQuestion{
+    width: 90%;
+
+  }
+
+  .quesBtn{
+    width: 50%;
   }
 }
 

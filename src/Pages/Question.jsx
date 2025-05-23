@@ -4,6 +4,7 @@ import { Button } from '@mui/material';
 import { Navigate, useNavigate } from 'react-router-dom';
 import ErrorMessage from '../Components/ErrorMessage.jsx';
 
+
 function Question(
     {
           currQues,
@@ -51,7 +52,7 @@ function Question(
 
 
   return (
-    <div>
+    <div className="mainDiv">
         <h1>Question {currQues + 1}</h1>
         <div className='singleQuestion'>
 
@@ -77,7 +78,8 @@ function Question(
        </div>
        <div className='controls'>
 
-         <Button
+         <Button 
+         className='quesBtn'
             variant="contained"
             color="secondary"
             size="large"
@@ -88,6 +90,7 @@ function Question(
             Quit
           </Button>
           <Button
+          className='quesBtn'
             variant="contained"
             color="primary"
             size="large"
